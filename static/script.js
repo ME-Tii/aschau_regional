@@ -5,7 +5,7 @@ function toggleSidebar() {
     const toggleBtn = document.querySelector('.toggle-btn');
     sidebar.classList.toggle('collapsed');
     toggleBtn.classList.toggle('rotated');
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 768 && mainContent) {
         if (sidebar.classList.contains('collapsed')) {
             mainContent.style.marginLeft = '0';
         } else {
