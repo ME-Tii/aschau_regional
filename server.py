@@ -1,21 +1,16 @@
-#!/usr/bin/env python3
-import http.server
-import socketserver
+from flask import Flask, send_from_directory, render_template
 import os
 
-PORT = 8009
-DIRECTORY = os.path.dirname(os.path.abspath(__file__))
+app = Flask(__name__)
 
-os.chdir(DIRECTORY)
+@app.route('/')
+def index():
+    return render_template('index.html')
 
-class Handler(http.server.SimpleHTTPRequestHandler):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, directory=DIRECTORY, **kwargs)
+@app.route('/<path:path>')
+def static_files(path):
+    return send_from_directory('.', path)
 
-try:
-    with socketserver.TCPServer(("", PORT), Handler) as httpd:
-        print(f"Server running at http://localhost:{PORT}")
-        print("Press Ctrl+C to stop")
-        httpd.serve_forever()
-except KeyboardInterrupt:
-    print("\nServer stopped.")
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)

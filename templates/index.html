@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aschau Regional</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
     <nav class="navbar">
         <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
         <div class="navbar-content">
-            <img src="pictures/logo_aschau_regional.jpeg" alt="Aschau Regional Logo" style="height: 150px;">
+            <img src="{{ url_for('static', filename='pictures/logo_aschau_regional.jpeg') }}" alt="Aschau Regional Logo" style="height: 150px;">
         </div>
     </nav>
     <div class="hero">
         <h1>Regionale Produkte und Dienstleistungen<br>aus Aschau im Chiemgau</h1>
-        <button class="slide-btn prev" onclick="changeSlide(-1)"><img src="pictures/left-arrow.png" alt="Previous"></button>
-        <button class="slide-btn next" onclick="changeSlide(1)"><img src="pictures/right-arrow.png" alt="Next"></button>
+        <button class="slide-btn prev" onclick="changeSlide(-1)"><img src="{{ url_for('static', filename='pictures/left-arrow.png') }}" alt="Previous"></button>
+        <button class="slide-btn next" onclick="changeSlide(1)"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button>
     </div>
     <div class="container">
         <aside class="sidebar collapsed" id="sidebar">
@@ -32,22 +32,22 @@
             <section id="landwirtschaft">
                  <h2>Landwirtschaft</h2>
                  <p>Entdecken Sie die reiche Tradition der Landwirtschaft in der Aschau-Region. Hier finden Sie Informationen über lokale Betriebe, Produkte und nachhaltige Praktiken. Von frischer Milch und Käse bis hin zu Bio-Obst und -Gemüse – unsere Bauern bieten eine Vielzahl an hochwertigen, regionalen Produkten. Erfahren Sie mehr über die nachhaltige Bewirtschaftung unserer Felder und Wiesen, die die Umwelt schont und die Qualität unserer Lebensmittel sichert.</p>
-                 <img src="pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg" alt="Cow" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
+                  <img src="{{ url_for('static', filename='pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg') }}" alt="Cow" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
              </section>
             <section id="keramik">
                  <h2>Keramik</h2>
                  <p>Die Keramik-Kunst der Aschau-Region ist weltbekannt. Erfahren Sie mehr über die Handwerkskunst, Ateliers und Ausstellungen. Unsere Töpfer und Künstler schaffen einzigartige Stücke, von traditionellen Vasen bis zu modernen Skulpturen. Besuchen Sie lokale Werkstätten, wo Sie den Prozess von der Erde bis zum fertigen Werk verfolgen können, und nehmen Sie an Workshops teil, um selbst kreativ zu werden.</p>
-                 <img src="pictures/keramik.jpeg" alt="Keramik" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
+                  <img src="{{ url_for('static', filename='pictures/keramik.jpeg') }}" alt="Keramik" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
              </section>
             <section id="tourismus">
                  <h2>Tourismus</h2>
                  <p>Entdecken Sie die schönsten Sehenswürdigkeiten und Aktivitäten in der Aschau-Region. Von Wandern bis Kultur – hier ist für jeden etwas dabei. Erkunden Sie die malerischen Wanderwege in den Chiemgauer Alpen, besuchen Sie historische Schlösser oder genießen Sie entspannte Bootstouren auf dem Chiemsee. Im Sommer locken Festivals und Märkte, im Winter bieten sich Skifahren und Langlaufen an. Unsere Region bietet unvergessliche Erlebnisse für Familien, Paare und Abenteurer.</p>
-                 <img src="pictures/tour.jpeg" alt="Tourismus" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
+                  <img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="Tourismus" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
              </section>
             <section id="natur">
                  <h2>Natur</h2>
                  <p>Die unberührte Natur der Aschau-Region lädt zu Entdeckungen ein. Informationen über Nationalparks, Seen und Outdoor-Aktivitäten. Der Chiemgauer Alpenpark bietet atemberaubende Landschaften mit Bergen, Tälern und klaren Seen. Wandern Sie durch dichte Wälder, beobachten Sie seltene Tiere oder entspannen Sie am Ufer des Chiemsees. Ob Vogelbeobachtung, Mountainbiking oder Angeln – unsere Natur ist ein Paradies für Outdoor-Enthusiasten und Naturliebhaber.</p>
-                 <img src="pictures/nature.jpg" alt="Natur" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
+                  <img src="{{ url_for('static', filename='pictures/nature.jpg') }}" alt="Natur" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
              </section>
         </main>
     </div>
@@ -79,6 +79,6 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

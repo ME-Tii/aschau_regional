@@ -19,9 +19,9 @@ function toggleSidebar() {
 // Slideshow for background images
 let currentSlide = 0;
 const slides = [
-    'pictures_slide_show/image1.jpeg',
-    'pictures_slide_show/image2.jpeg',
-    'pictures_slide_show/image3.png'
+    'static/pictures_slide_show/image1.jpeg',
+    'static/pictures_slide_show/image2.jpeg',
+    'static/pictures_slide_show/image3.png'
 ];
 
 // Initialize background
