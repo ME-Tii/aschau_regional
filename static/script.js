@@ -25,19 +25,17 @@ const slides = [
 ];
 
 // Initialize background
-const hero = document.querySelector('.hero');
-hero.style.backgroundImage = `url('${slides[currentSlide]}')`;
-hero.style.backgroundPosition = window.innerWidth <= 768 ? 'center top' : 'center';
-hero.style.backgroundSize = 'contain';
-hero.style.backgroundRepeat = 'no-repeat';
+document.body.style.backgroundImage = `url('${slides[currentSlide]}')`;
+document.body.style.backgroundPosition = window.innerWidth <= 768 ? 'center top' : 'center';
+document.body.style.backgroundSize = 'contain';
+document.body.style.backgroundRepeat = 'no-repeat';
 
 function changeSlide(direction) {
     currentSlide = (currentSlide + direction + slides.length) % slides.length;
-    const hero = document.querySelector('.hero');
-    hero.style.backgroundImage = `url('${slides[currentSlide]}')`;
-    hero.style.backgroundPosition = window.innerWidth <= 768 ? 'center top' : 'center';
-    hero.style.backgroundSize = 'contain';
-    hero.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundImage = `url('${slides[currentSlide]}')`;
+    document.body.style.backgroundPosition = window.innerWidth <= 768 ? 'center top' : 'center';
+    document.body.style.backgroundSize = 'contain';
+    document.body.style.backgroundRepeat = 'no-repeat';
 }
 
 // Smooth scrolling for anchor links
