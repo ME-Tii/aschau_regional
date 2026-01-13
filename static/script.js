@@ -69,6 +69,20 @@ if (sidebarEl) {
     sidebarEl.classList.add('collapsed');
 }
 
+// Close sidebar when clicking outside
+document.addEventListener('click', function(event) {
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.querySelector('.toggle-btn');
+    if (sidebar && !sidebar.classList.contains('collapsed')) {
+        if (!sidebar.contains(event.target) && !toggleBtn.contains(event.target)) {
+            sidebar.classList.add('collapsed');
+            if (toggleBtn && toggleBtn.classList.contains('rotated')) {
+                toggleBtn.classList.remove('rotated');
+            }
+        }
+    }
+});
+
 // Hide slide buttons always
 const buttons = document.querySelectorAll('.slide-btn');
 buttons.forEach(btn => btn.style.display = 'none');
