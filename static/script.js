@@ -27,14 +27,14 @@ const slides = [
 // Initialize background
 document.body.style.backgroundImage = `url('${slides[currentSlide]}')`;
 document.body.style.backgroundPosition = window.innerWidth <= 768 ? 'center top' : 'center';
-document.body.style.backgroundSize = 'contain';
+document.body.style.backgroundSize = 'cover';
 document.body.style.backgroundRepeat = 'no-repeat';
 
 function changeSlide(direction) {
     currentSlide = (currentSlide + direction + slides.length) % slides.length;
     document.body.style.backgroundImage = `url('${slides[currentSlide]}')`;
     document.body.style.backgroundPosition = window.innerWidth <= 768 ? 'center top' : 'center';
-    document.body.style.backgroundSize = 'contain';
+    document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundRepeat = 'no-repeat';
 }
 
