@@ -3,21 +3,24 @@ function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
     const mainContent = document.querySelector('.main-content') || document.querySelector('.vereine-main');
     const toggleBtn = document.querySelector('.toggle-btn');
-    sidebar.classList.toggle('collapsed');
-    toggleBtn.classList.toggle('rotated');
-    if (window.innerWidth > 768) {
-        if (sidebar.classList.contains('collapsed')) {
-            if (mainContent) mainContent.style.marginLeft = '0';
+    if (sidebar) {
+        sidebar.classList.toggle('collapsed');
+        if (toggleBtn) toggleBtn.classList.toggle('rotated');
+        if (window.innerWidth > 768) {
+            if (sidebar.classList.contains('collapsed')) {
+                if (mainContent) mainContent.style.marginLeft = '0';
+            } else {
+                if (mainContent) mainContent.style.marginLeft = '250px';
+            }
         } else {
-            if (mainContent) mainContent.style.marginLeft = '250px';
+            sidebar.style.height = 'auto';
         }
-    } else {
-        sidebar.style.height = 'auto';
     }
 }
 
 // Slideshow for background images
-if (document.querySelector('.hero')) {
+const heroElement = document.querySelector('.hero');
+if (heroElement) {
     let currentSlide = 0;
     const slides = [
         '/static/pictures_slide_show/image1.jpeg',
@@ -26,24 +29,24 @@ if (document.querySelector('.hero')) {
     ];
 
     // Initialize background
-    const hero = document.querySelector('.hero');
-    hero.style.backgroundImage = `url('${slides[currentSlide]}')`;
-    hero.style.backgroundPosition = 'center';
-    hero.style.backgroundSize = 'cover';
-    hero.style.backgroundRepeat = 'no-repeat';
+    heroElement.style.backgroundImage = `url('${slides[currentSlide]}')`;
+    heroElement.style.backgroundPosition = 'center';
+    heroElement.style.backgroundSize = 'cover';
+    heroElement.style.backgroundRepeat = 'no-repeat';
 
     function changeSlide(direction) {
         currentSlide = (currentSlide + direction + slides.length) % slides.length;
-        const hero = document.querySelector('.hero');
-        hero.style.backgroundImage = `url('${slides[currentSlide]}')`;
-        hero.style.backgroundPosition = 'center';
-        hero.style.backgroundSize = 'cover';
-        hero.style.backgroundRepeat = 'no-repeat';
+        heroElement.style.backgroundImage = `url('${slides[currentSlide]}')`;
+        heroElement.style.backgroundPosition = 'center';
+        heroElement.style.backgroundSize = 'cover';
+        heroElement.style.backgroundRepeat = 'no-repeat';
     }
 
     // Add event listeners for slide buttons
-    document.querySelector('.slide-btn.prev').addEventListener('click', () => changeSlide(-1));
-    document.querySelector('.slide-btn.next').addEventListener('click', () => changeSlide(1));
+    const prevBtn = document.querySelector('.slide-btn.prev');
+    const nextBtn = document.querySelector('.slide-btn.next');
+    if (prevBtn) prevBtn.addEventListener('click', () => changeSlide(-1));
+    if (nextBtn) nextBtn.addEventListener('click', () => changeSlide(1));
 }
 
 // Smooth scrolling for anchor links
@@ -61,8 +64,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Collapse sidebar on mobile by default
-if (window.innerWidth <= 768) {
-    document.getElementById('sidebar').classList.add('collapsed');
+const sidebarEl = document.getElementById('sidebar');
+if (sidebarEl && window.innerWidth <= 768) {
+    sidebarEl.classList.add('collapsed');
 }
 
 // Hide slide buttons always
