@@ -484,14 +484,14 @@ section p {
     .search-bar {
         display: none;
     }
-    .mobile-search {
-        display: block;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.9);
-        padding: 10px;
-        text-align: center;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
+.mobile-search {
+    display: none !important;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
     .mobile-search input {
         padding: 8px;
         border: 1px solid #ccc;
