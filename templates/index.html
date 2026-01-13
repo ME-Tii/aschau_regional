@@ -11,13 +11,15 @@
     <nav class="navbar">
         <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
         <div class="navbar-content">
-            <img src="{{ url_for('static', filename='pictures/logo_aschau_regional.jpeg') }}" alt="Aschau Regional Logo" style="height: 150px;">
+            <img src="{{ url_for('static', filename='pictures/logo_aschau_regional.jpeg') }}" alt="Aschau Regional Logo" style="height: 200px;">
         </div>
     </nav>
     <div class="hero">
-        <h1>Regionale Produkte und Dienstleistungen<br>aus Aschau im Chiemgau</h1>
-        <button class="slide-btn prev" onclick="changeSlide(-1)"><img src="{{ url_for('static', filename='pictures/left-arrow.png') }}" alt="Previous"></button>
-        <button class="slide-btn next" onclick="changeSlide(1)"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button>
+        <div class="hero-content">
+            <h1>Regionale Produkte und Dienstleistungen<br>aus Aschau im Chiemgau</h1>
+            <button class="slide-btn prev"><img src="{{ url_for('static', filename='pictures/left-arrow.png') }}" alt="Previous"></button>
+            <button class="slide-btn next"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button>
+        </div>
     </div>
     <div class="container">
         <aside class="sidebar collapsed" id="sidebar">

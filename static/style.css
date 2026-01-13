@@ -13,8 +13,17 @@ body {
 }
 
 .hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100vh;
+    z-index: -1;
+}
+
+.hero-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
@@ -22,11 +31,20 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    padding-bottom: 140px;
     position: relative;
+    z-index: 1;
+    height: 100%;
 }
 
 .hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    word-spacing: 0.3em;
+    white-space: pre;
     animation: pulsate 8s infinite;
 }
 
@@ -45,6 +63,8 @@ body {
     cursor: pointer;
     border-radius: 50%;
     opacity: 1 !important;
+    z-index: 2;
+    display: none;
 }
 
 .slide-btn img {
@@ -67,12 +87,11 @@ body {
     padding: 40px 40px 0 40px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     position: relative;
 }
 
 .navbar-content {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
 }
@@ -84,7 +103,7 @@ body {
 
 .container {
     display: flex;
-    min-height: calc(100vh - 80px);
+    margin-top: 90vh;
 }
 
 .sidebar {
@@ -161,7 +180,7 @@ body {
 
 .main-content {
     flex: 1;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
     margin-left: 0;
@@ -170,7 +189,7 @@ body {
 section {
     margin-bottom: 3rem;
     background: #fff;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
@@ -276,7 +295,12 @@ section p {
 @media (max-width: 768px) {
     .hero {
         height: 50vh;
+    }
+    .hero-content {
         font-size: 0.8rem;
+    }
+    .container {
+        margin-top: 45vh;
     }
     .container {
         flex-direction: column;
