@@ -212,15 +212,13 @@ section p {
 .section-btn {
     display: block;
     margin: 1rem auto;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem;
     background: #007bff;
-    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    font-size: 1rem;
     transition: background 0.3s;
 }
 
