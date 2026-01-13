@@ -244,6 +244,10 @@ section p {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.navbar-vereine .navbar-content img {
+    height: 100px;
+}
+
 .vereine-main {
     padding: 20px;
     max-width: 1200px;
