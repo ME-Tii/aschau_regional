@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     color: #333;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -44,7 +45,7 @@ body {
     color: white;
     text-align: center;
     word-spacing: 0.3em;
-    white-space: pre;
+    max-width: 90vw;
     animation: pulsate 8s infinite;
 }
 
@@ -299,6 +300,10 @@ section p {
     .hero-content {
         font-size: 0.8rem;
     }
+    .hero h1 {
+        font-size: 0.6rem;
+        word-spacing: 0.1em;
+    }
     .container {
         margin-top: 45vh;
     }
@@ -327,6 +332,14 @@ section p {
     .toggle-btn {
         padding: 0.75rem 1rem;
         font-size: 1.5rem;
+        z-index: 1;
+    }
+    .navbar-content img {
+        height: 80px;
+    }
+    .main-content {
+        max-width: none;
+        margin: 0;
     }
     section img {
         width: 50%;
