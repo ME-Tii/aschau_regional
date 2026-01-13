@@ -238,7 +238,10 @@ section p {
 
 /* Vereine page styles */
 .navbar-vereine {
-    background: grey;
+    background-image: url('/static/pictures/bergsteigerdorf-sachrang.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     position: static;
     z-index: auto;
