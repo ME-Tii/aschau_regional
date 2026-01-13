@@ -104,21 +104,23 @@
     <script src="{{ url_for('static', filename='script.js') }}"></script>
     <script>
         // Search functionality for vereine grid
-        const searchInput = document.querySelector('.search-bar input') || document.querySelector('.mobile-search input');
-        if (searchInput) {
-            searchInput.addEventListener('input', function() {
-                const query = this.value.toLowerCase();
-                const items = document.querySelectorAll('.grid-item');
-                items.forEach(item => {
-                    const name = item.querySelector('p').textContent.toLowerCase();
-                    if (name.includes(query)) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
+        const searchInputs = document.querySelectorAll('.search-bar input, .mobile-search input');
+        searchInputs.forEach(searchInput => {
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase();
+                    const items = document.querySelectorAll('.grid-item');
+                    items.forEach(item => {
+                        const name = item.querySelector('p').textContent.toLowerCase();
+                        if (name.includes(query)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
                 });
-            });
-        }
+            }
+        });
     </script>
 </body>
 </html>
