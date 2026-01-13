@@ -238,7 +238,7 @@ section p {
 
 /* Vereine page styles */
 .navbar-vereine {
-    background: black;
+    background: grey;
     color: white;
     position: static;
     z-index: auto;
