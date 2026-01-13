@@ -255,6 +255,12 @@ section p {
     top: 40px;
 }
 
+.navbar-vereine .navbar-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .navbar-vereine .navbar-content img {
     height: 100px;
 }
