@@ -472,7 +472,10 @@ section p {
         flex: 0 0 50%;
     }
     .grid-item img {
-        object-fit: contain;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin: 0 auto;
     }
     .search-bar {
         display: none;
