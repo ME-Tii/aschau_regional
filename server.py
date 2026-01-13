@@ -40,7 +40,7 @@ item_data = {
         {'name': 'Obstplantage', 'image': 'pictures/tour.jpeg'},
         {'name': 'Käserei Regional', 'image': 'pictures/keramik.jpeg'},
         {'name': 'Weinbau Aschau', 'image': 'pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png'},
-        {'name': 'Imkerei Chiemgau', 'image': 'pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg'},
+        {'name': 'Imkerei Chiemgau', 'image': 'pictures/bergsteigerdorf-sachrang.jpeg'},
         {'name': 'Fischzucht', 'image': 'pictures/bergsteigerdorf-sachrang.jpeg'},
         {'name': 'Landwirtschaftsverband', 'image': 'pictures/aschau-ichiemgau.jpeg'}
     ],
@@ -51,7 +51,7 @@ item_data = {
         {'name': 'Steinzeug Werkstatt', 'image': 'pictures/tour.jpeg'},
         {'name': 'Kunstkeramik Galerie', 'image': 'pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg'},
         {'name': 'Tonarbeiten Chiemgau', 'image': 'pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png'},
-        {'name': 'Irdenware Produktion', 'image': 'pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg'},
+        {'name': 'Irdenware Produktion', 'image': 'pictures/bergsteigerdorf-sachrang.jpeg'},
         {'name': 'Majolika Atelier', 'image': 'pictures/bergsteigerdorf-sachrang.jpeg'},
         {'name': 'Keramik Schule', 'image': 'pictures/aschau-ichiemgau.jpeg'}
     ],
@@ -62,7 +62,7 @@ item_data = {
         {'name': 'Kulturelle Festivals', 'image': 'pictures/keramik.jpeg'},
         {'name': 'Wintersport Aschau', 'image': 'pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg'},
         {'name': 'Radwege Region', 'image': 'pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png'},
-        {'name': 'Historische Stätten', 'image': 'pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg'},
+        {'name': 'Historische Stätten', 'image': 'pictures/bergsteigerdorf-sachrang.jpeg'},
         {'name': 'Naturpark Chiemgau', 'image': 'pictures/bergsteigerdorf-sachrang.jpeg'},
         {'name': 'Tourismus Info', 'image': 'pictures/aschau-ichiemgau.jpeg'}
     ],
@@ -73,7 +73,7 @@ item_data = {
         {'name': 'Vogelbeobachtung', 'image': 'pictures/keramik.jpeg'},
         {'name': 'Mountainbiking', 'image': 'pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg'},
         {'name': 'Angeln Spots', 'image': 'pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png'},
-        {'name': 'Naturpark Trails', 'image': 'pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg'},
+        {'name': 'Naturpark Trails', 'image': 'pictures/bergsteigerdorf-sachrang.jpeg'},
         {'name': 'Seen und Teiche', 'image': 'pictures/bergsteigerdorf-sachrang.jpeg'},
         {'name': 'Umweltbildung', 'image': 'pictures/aschau-ichiemgau.jpeg'}
     ],
@@ -84,7 +84,7 @@ item_data = {
         {'name': 'Schützenverein', 'image': 'pictures/keramik.jpeg'},
         {'name': 'Feuerwehrverein', 'image': 'pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg'},
         {'name': 'Musikverein', 'image': 'pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png'},
-        {'name': 'Wanderclub', 'image': 'pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg'},
+        {'name': 'Wanderclub', 'image': 'pictures/bergsteigerdorf-sachrang.jpeg'},
         {'name': 'Jugendgruppe', 'image': 'pictures/bergsteigerdorf-sachrang.jpeg'},
         {'name': 'Gemeinschaftsverein', 'image': 'pictures/aschau-ichiemgau.jpeg'}
     ],
@@ -95,7 +95,7 @@ item_data = {
         {'name': 'Gemeinde Nachrichten', 'image': 'pictures/keramik.jpeg'},
         {'name': 'Sport Highlights', 'image': 'pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg'},
         {'name': 'Veranstaltungskalender', 'image': 'pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png'},
-        {'name': 'Lokale Entwicklungen', 'image': 'pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg'},
+        {'name': 'Lokale Entwicklungen', 'image': 'pictures/bergsteigerdorf-sachrang.jpeg'},
         {'name': 'Umwelt News', 'image': 'pictures/bergsteigerdorf-sachrang.jpeg'},
         {'name': 'Community Updates', 'image': 'pictures/aschau-ichiemgau.jpeg'}
     ]

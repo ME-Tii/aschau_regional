@@ -450,6 +450,9 @@ section p {
     .grid-item {
         flex: 0 0 50%;
     }
+    .grid-item img {
+        object-fit: contain;
+    }
     .search-bar {
         display: none;
     }
