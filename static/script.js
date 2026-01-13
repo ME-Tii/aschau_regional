@@ -27,7 +27,7 @@ const slides = [
 // Initialize background
 const hero = document.querySelector('.hero');
 hero.style.backgroundImage = `url('${slides[currentSlide]}')`;
-hero.style.backgroundPosition = 'center';
+hero.style.backgroundPosition = window.innerWidth <= 768 ? 'center top' : 'center';
 hero.style.backgroundSize = 'contain';
 hero.style.backgroundRepeat = 'no-repeat';
 
@@ -35,7 +35,7 @@ function changeSlide(direction) {
     currentSlide = (currentSlide + direction + slides.length) % slides.length;
     const hero = document.querySelector('.hero');
     hero.style.backgroundImage = `url('${slides[currentSlide]}')`;
-    hero.style.backgroundPosition = 'center';
+    hero.style.backgroundPosition = window.innerWidth <= 768 ? 'center top' : 'center';
     hero.style.backgroundSize = 'contain';
     hero.style.backgroundRepeat = 'no-repeat';
 }
