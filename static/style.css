@@ -225,6 +225,11 @@ section p {
     opacity: 0.7;
 }
 
+.section-btn img {
+    width: 50px;
+    height: 50px;
+}
+
 .footer {
     background: grey;
     padding: 2rem;
