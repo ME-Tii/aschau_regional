@@ -28,7 +28,7 @@ const slides = [
 const hero = document.querySelector('.hero');
 hero.style.backgroundImage = `url('${slides[currentSlide]}')`;
 hero.style.backgroundPosition = 'center';
-hero.style.backgroundSize = 'cover';
+hero.style.backgroundSize = 'contain';
 hero.style.backgroundRepeat = 'no-repeat';
 
 function changeSlide(direction) {
@@ -36,7 +36,7 @@ function changeSlide(direction) {
     const hero = document.querySelector('.hero');
     hero.style.backgroundImage = `url('${slides[currentSlide]}')`;
     hero.style.backgroundPosition = 'center';
-    hero.style.backgroundSize = 'cover';
+    hero.style.backgroundSize = 'contain';
     hero.style.backgroundRepeat = 'no-repeat';
 }
 
