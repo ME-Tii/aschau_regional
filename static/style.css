@@ -236,6 +236,55 @@ section p {
     line-height: 1.5;
 }
 
+/* Vereine page styles */
+.navbar-vereine {
+    background: white;
+    position: static;
+    z-index: auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.vereine-main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.grid-item {
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.grid-item p {
+    margin: 10px 0;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.search-bar {
+    margin-left: auto;
+}
+
+.search-bar input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
 
 
 .slide {
@@ -358,5 +407,11 @@ section p {
     section {
         display: block;
         margin-bottom: 2rem;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .search-bar {
+        display: none;
     }
 }

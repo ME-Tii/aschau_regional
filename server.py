@@ -7,6 +7,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/vereine')
+def vereine():
+    return render_template('vereine.html')
+
 @app.route('/<path:path>')
 def static_files(path):
     return send_from_directory('.', path)
