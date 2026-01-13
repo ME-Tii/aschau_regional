@@ -209,6 +209,25 @@ section p {
     padding-right: 30px;
 }
 
+.section-btn {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.section-btn:hover {
+    background: #0056b3;
+}
+
 .footer {
     background: grey;
     padding: 2rem;
