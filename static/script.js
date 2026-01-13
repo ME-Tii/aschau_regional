@@ -1,15 +1,15 @@
 // JavaScript for expandable sidebar
 function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
-    const mainContent = document.querySelector('.main-content');
+    const mainContent = document.querySelector('.main-content') || document.querySelector('.vereine-main');
     const toggleBtn = document.querySelector('.toggle-btn');
     sidebar.classList.toggle('collapsed');
     toggleBtn.classList.toggle('rotated');
-    if (window.innerWidth > 768 && mainContent) {
+    if (window.innerWidth > 768) {
         if (sidebar.classList.contains('collapsed')) {
-            mainContent.style.marginLeft = '0';
+            if (mainContent) mainContent.style.marginLeft = '0';
         } else {
-            mainContent.style.marginLeft = '250px';
+            if (mainContent) mainContent.style.marginLeft = '250px';
         }
     } else {
         sidebar.style.height = 'auto';
