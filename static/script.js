@@ -17,27 +17,33 @@ function toggleSidebar() {
 }
 
 // Slideshow for background images
-let currentSlide = 0;
-const slides = [
-    '/static/pictures_slide_show/image1.jpeg',
-    '/static/pictures_slide_show/image2.jpeg',
-    '/static/pictures_slide_show/image3.png'
-];
+if (document.querySelector('.hero')) {
+    let currentSlide = 0;
+    const slides = [
+        '/static/pictures_slide_show/image1.jpeg',
+        '/static/pictures_slide_show/image2.jpeg',
+        '/static/pictures_slide_show/image3.png'
+    ];
 
-// Initialize background
-const hero = document.querySelector('.hero');
-hero.style.backgroundImage = `url('${slides[currentSlide]}')`;
-hero.style.backgroundPosition = 'center';
-hero.style.backgroundSize = 'cover';
-hero.style.backgroundRepeat = 'no-repeat';
-
-function changeSlide(direction) {
-    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    // Initialize background
     const hero = document.querySelector('.hero');
     hero.style.backgroundImage = `url('${slides[currentSlide]}')`;
     hero.style.backgroundPosition = 'center';
     hero.style.backgroundSize = 'cover';
     hero.style.backgroundRepeat = 'no-repeat';
+
+    function changeSlide(direction) {
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        const hero = document.querySelector('.hero');
+        hero.style.backgroundImage = `url('${slides[currentSlide]}')`;
+        hero.style.backgroundPosition = 'center';
+        hero.style.backgroundSize = 'cover';
+        hero.style.backgroundRepeat = 'no-repeat';
+    }
+
+    // Add event listeners for slide buttons
+    document.querySelector('.slide-btn.prev').addEventListener('click', () => changeSlide(-1));
+    document.querySelector('.slide-btn.next').addEventListener('click', () => changeSlide(1));
 }
 
 // Smooth scrolling for anchor links
@@ -62,7 +68,3 @@ if (window.innerWidth <= 768) {
 // Hide slide buttons always
 const buttons = document.querySelectorAll('.slide-btn');
 buttons.forEach(btn => btn.style.display = 'none');
-
-// Add event listeners for slide buttons
-document.querySelector('.slide-btn.prev').addEventListener('click', () => changeSlide(-1));
-document.querySelector('.slide-btn.next').addEventListener('click', () => changeSlide(1));
