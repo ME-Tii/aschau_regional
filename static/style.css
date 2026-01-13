@@ -337,6 +337,7 @@ section p {
     }
     .navbar-content {
         z-index: 1;
+        justify-content: flex-end;
     }
     .navbar-content img {
         height: 80px;
