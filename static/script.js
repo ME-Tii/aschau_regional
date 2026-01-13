@@ -63,9 +63,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Collapse sidebar on mobile by default
+// Collapse sidebar by default on all pages
 const sidebarEl = document.getElementById('sidebar');
-if (sidebarEl && window.innerWidth <= 768) {
+if (sidebarEl) {
     sidebarEl.classList.add('collapsed');
 }
 
