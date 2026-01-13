@@ -473,7 +473,7 @@ section p {
     .grid-item {
         width: 150px;
         height: 200px;
-        margin: 10px auto;
+        margin: 10px 0;
     }
     .grid-item img {
         width: 100%;
