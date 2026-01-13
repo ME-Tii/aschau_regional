@@ -304,9 +304,9 @@ section p {
 .grid-item {
     text-align: center;
     border: 1px solid #ddd;
-    width: 200px;
+    flex: 1 1 200px;
     height: 250px;
-    margin: 10px auto;
+    margin: 10px;
     box-sizing: border-box;
 }
 
@@ -471,9 +471,9 @@ section p {
         margin-bottom: 0;
     }
     .grid-item {
-        width: 150px;
+        flex: 1 1 150px;
         height: 200px;
-        margin: 10px 0;
+        margin: 10px;
     }
     .grid-item img {
         width: 100%;
