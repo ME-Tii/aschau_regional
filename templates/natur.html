@@ -17,7 +17,7 @@
             <input type="text" placeholder="Suche...">
         </div>
     </nav>
-    <aside class="sidebar">
+    <aside id="sidebar" class="sidebar">
         <ul class="sidebar-menu">
             <li><a href="/landwirtschaft">Landwirtschaft</a></li>
             <li><a href="/keramik">Keramik</a></li>
@@ -31,42 +31,42 @@
     <main class="vereine-main">
         <h2>Natur</h2>
         <div class="grid">
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/nature.jpg') }}" alt="Natur 1">
-                <p>Chiemsee Ufer</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Natur 2">
-                <p>Alpenwanderwege</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="Natur 3">
-                <p>Waldgebiete</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/keramik.jpeg') }}" alt="Natur 4">
-                <p>Vogelbeobachtung</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg') }}" alt="Natur 5">
-                <p>Mountainbiking</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png') }}" alt="Natur 6">
-                <p>Angeln Spots</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg') }}" alt="Natur 7">
-                <p>Naturpark Trails</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/bergsteigerdorf-sachrang.jpeg') }}" alt="Natur 8">
-                <p>Seen und Teiche</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Natur 9">
-                <p>Umweltbildung</p>
-            </div>
+             <div class="grid-item">
+                 <a href="/natur/info/1"><img src="{{ url_for('static', filename='pictures/nature.jpg') }}" alt="Natur 1"></a>
+                 <p>Chiemsee Ufer</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/natur/info/2"><img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Natur 2"></a>
+                 <p>Alpenwanderwege</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/natur/info/3"><img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="Natur 3"></a>
+                 <p>Waldgebiete</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/natur/info/4"><img src="{{ url_for('static', filename='pictures/keramik.jpeg') }}" alt="Natur 4"></a>
+                 <p>Vogelbeobachtung</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/natur/info/5"><img src="{{ url_for('static', filename='pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg') }}" alt="Natur 5"></a>
+                 <p>Mountainbiking</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/natur/info/6"><img src="{{ url_for('static', filename='pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png') }}" alt="Natur 6"></a>
+                 <p>Angeln Spots</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/natur/info/7"><img src="{{ url_for('static', filename='pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg') }}" alt="Natur 7"></a>
+                 <p>Naturpark Trails</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/natur/info/8"><img src="{{ url_for('static', filename='pictures/bergsteigerdorf-sachrang.jpeg') }}" alt="Natur 8"></a>
+                 <p>Seen und Teiche</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/natur/info/9"><img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Natur 9"></a>
+                 <p>Umweltbildung</p>
+             </div>
         </div>
     </main>
 

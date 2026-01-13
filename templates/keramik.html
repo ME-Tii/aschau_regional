@@ -17,7 +17,7 @@
             <input type="text" placeholder="Suche...">
         </div>
     </nav>
-    <aside class="sidebar">
+    <aside id="sidebar" class="sidebar">
         <ul class="sidebar-menu">
             <li><a href="/landwirtschaft">Landwirtschaft</a></li>
             <li><a href="/keramik">Keramik</a></li>
@@ -31,42 +31,42 @@
     <main class="vereine-main">
         <h2>Keramik</h2>
         <div class="grid">
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/keramik.jpeg') }}" alt="Keramik 1">
-                <p>Töpferei Schmidt</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Keramik 2">
-                <p>Keramik Atelier</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/nature.jpg') }}" alt="Keramik 3">
-                <p>Porzellan Manufaktur</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="Keramik 4">
-                <p>Steinzeug Werkstatt</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg') }}" alt="Keramik 5">
-                <p>Kunstkeramik Galerie</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png') }}" alt="Keramik 6">
-                <p>Tonarbeiten Chiemgau</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg') }}" alt="Keramik 7">
-                <p>Irdenware Produktion</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/bergsteigerdorf-sachrang.jpeg') }}" alt="Keramik 8">
-                <p>Majolika Atelier</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Keramik 9">
-                <p>Keramik Schule</p>
-            </div>
+             <div class="grid-item">
+                 <a href="/keramik/info/1"><img src="{{ url_for('static', filename='pictures/keramik.jpeg') }}" alt="Keramik 1"></a>
+                 <p>Töpferei Schmidt</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/keramik/info/2"><img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Keramik 2"></a>
+                 <p>Keramik Atelier</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/keramik/info/3"><img src="{{ url_for('static', filename='pictures/nature.jpg') }}" alt="Keramik 3"></a>
+                 <p>Porzellan Manufaktur</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/keramik/info/4"><img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="Keramik 4"></a>
+                 <p>Steinzeug Werkstatt</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/keramik/info/5"><img src="{{ url_for('static', filename='pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg') }}" alt="Keramik 5"></a>
+                 <p>Kunstkeramik Galerie</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/keramik/info/6"><img src="{{ url_for('static', filename='pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png') }}" alt="Keramik 6"></a>
+                 <p>Tonarbeiten Chiemgau</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/keramik/info/7"><img src="{{ url_for('static', filename='pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg') }}" alt="Keramik 7"></a>
+                 <p>Irdenware Produktion</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/keramik/info/8"><img src="{{ url_for('static', filename='pictures/bergsteigerdorf-sachrang.jpeg') }}" alt="Keramik 8"></a>
+                 <p>Majolika Atelier</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/keramik/info/9"><img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Keramik 9"></a>
+                 <p>Keramik Schule</p>
+             </div>
         </div>
     </main>
 

@@ -17,7 +17,7 @@
             <input type="text" placeholder="Suche...">
         </div>
     </nav>
-    <aside class="sidebar">
+    <aside id="sidebar" class="sidebar">
         <ul class="sidebar-menu">
             <li><a href="/landwirtschaft">Landwirtschaft</a></li>
             <li><a href="/keramik">Keramik</a></li>
@@ -30,42 +30,42 @@
 
     <main class="vereine-main">
         <div class="grid">
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Verein 1">
-                <p>Sportverein Aschau</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/nature.jpg') }}" alt="Verein 2">
-                <p>Kulturverein Chiemgau</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="Verein 3">
-                <p>Anglerverein</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/keramik.jpeg') }}" alt="Verein 4">
-                <p>Schützenverein</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg') }}" alt="Verein 5">
-                <p>Feuerwehrverein</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png') }}" alt="Verein 6">
-                <p>Musikverein</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg') }}" alt="Verein 7">
-                <p>Wanderclub</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/bergsteigerdorf-sachrang.jpeg') }}" alt="Verein 8">
-                <p>Jugendgruppe</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Verein 9">
-                <p>Gemeinschaftsverein</p>
-            </div>
+             <div class="grid-item">
+                 <a href="/vereine/info/1"><img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Verein 1"></a>
+                 <p>Sportverein Aschau</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/vereine/info/2"><img src="{{ url_for('static', filename='pictures/nature.jpg') }}" alt="Verein 2"></a>
+                 <p>Kulturverein Chiemgau</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/vereine/info/3"><img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="Verein 3"></a>
+                 <p>Anglerverein</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/vereine/info/4"><img src="{{ url_for('static', filename='pictures/keramik.jpeg') }}" alt="Verein 4"></a>
+                 <p>Schützenverein</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/vereine/info/5"><img src="{{ url_for('static', filename='pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg') }}" alt="Verein 5"></a>
+                 <p>Feuerwehrverein</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/vereine/info/6"><img src="{{ url_for('static', filename='pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png') }}" alt="Verein 6"></a>
+                 <p>Musikverein</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/vereine/info/7"><img src="{{ url_for('static', filename='pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg') }}" alt="Verein 7"></a>
+                 <p>Wanderclub</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/vereine/info/8"><img src="{{ url_for('static', filename='pictures/bergsteigerdorf-sachrang.jpeg') }}" alt="Verein 8"></a>
+                 <p>Jugendgruppe</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/vereine/info/9"><img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Verein 9"></a>
+                 <p>Gemeinschaftsverein</p>
+             </div>
         </div>
     </main>
 

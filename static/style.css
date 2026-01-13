@@ -300,6 +300,18 @@ section p {
     padding: 0 10px;
 }
 
+.grid-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
 .search-bar {
     margin-left: auto;
     padding-right: 40px;

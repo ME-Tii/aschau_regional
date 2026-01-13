@@ -17,7 +17,7 @@
             <input type="text" placeholder="Suche...">
         </div>
     </nav>
-    <aside class="sidebar">
+    <aside id="sidebar" class="sidebar">
         <ul class="sidebar-menu">
             <li><a href="/landwirtschaft">Landwirtschaft</a></li>
             <li><a href="/keramik">Keramik</a></li>
@@ -31,42 +31,42 @@
     <main class="vereine-main">
         <h2>News</h2>
         <div class="grid">
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="News 1">
-                <p>Festival Ankündigung</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/nature.jpg') }}" alt="News 2">
-                <p>Wirtschaftsupdate</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="News 3">
-                <p>Kulturelle Events</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/keramik.jpeg') }}" alt="News 4">
-                <p>Gemeinde Nachrichten</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg') }}" alt="News 5">
-                <p>Sport Highlights</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png') }}" alt="News 6">
-                <p>Veranstaltungskalender</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg') }}" alt="News 7">
-                <p>Lokale Entwicklungen</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/bergsteigerdorf-sachrang.jpeg') }}" alt="News 8">
-                <p>Umwelt News</p>
-            </div>
-            <div class="grid-item">
-                <img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="News 9">
-                <p>Community Updates</p>
-            </div>
+             <div class="grid-item">
+                 <a href="/news/info/1"><img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="News 1"></a>
+                 <p>Festival Ankündigung</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/news/info/2"><img src="{{ url_for('static', filename='pictures/nature.jpg') }}" alt="News 2"></a>
+                 <p>Wirtschaftsupdate</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/news/info/3"><img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="News 3"></a>
+                 <p>Kulturelle Events</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/news/info/4"><img src="{{ url_for('static', filename='pictures/keramik.jpeg') }}" alt="News 4"></a>
+                 <p>Gemeinde Nachrichten</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/news/info/5"><img src="{{ url_for('static', filename='pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg') }}" alt="News 5"></a>
+                 <p>Sport Highlights</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/news/info/6"><img src="{{ url_for('static', filename='pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png') }}" alt="News 6"></a>
+                 <p>Veranstaltungskalender</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/news/info/7"><img src="{{ url_for('static', filename='pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg') }}" alt="News 7"></a>
+                 <p>Lokale Entwicklungen</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/news/info/8"><img src="{{ url_for('static', filename='pictures/bergsteigerdorf-sachrang.jpeg') }}" alt="News 8"></a>
+                 <p>Umwelt News</p>
+             </div>
+             <div class="grid-item">
+                 <a href="/news/info/9"><img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="News 9"></a>
+                 <p>Community Updates</p>
+             </div>
         </div>
     </main>
 
