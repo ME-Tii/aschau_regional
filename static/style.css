@@ -468,7 +468,7 @@ section p {
     }
     section {
         display: block;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
     }
     .grid-item {
         width: 150px;
