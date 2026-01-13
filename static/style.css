@@ -238,10 +238,15 @@ section p {
 
 /* Vereine page styles */
 .navbar-vereine {
-    background: white;
+    background: black;
+    color: white;
     position: static;
     z-index: auto;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-vereine .toggle-btn {
+    color: white;
 }
 
 .navbar-vereine .navbar-content img {
