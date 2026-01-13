@@ -336,7 +336,7 @@ section p {
         z-index: 2;
     }
     .navbar-content {
-        z-index: -1;
+        z-index: 1;
     }
     .navbar-content img {
         height: 80px;
