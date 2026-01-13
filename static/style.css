@@ -250,6 +250,9 @@ section p {
 
 .navbar-vereine .toggle-btn {
     color: white;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 
 .navbar-vereine .navbar-content img {
