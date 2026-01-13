@@ -19,11 +19,45 @@
     </nav>
 
     <main class="vereine-main">
-        <section>
-            <h2>Natur</h2>
-            <p>Die unberührte Natur der Aschau-Region lädt zu Entdeckungen ein. Informationen über Nationalparks, Seen und Outdoor-Aktivitäten. Der Chiemgauer Alpenpark bietet atemberaubende Landschaften mit Bergen, Tälern und klaren Seen. Wandern Sie durch dichte Wälder, beobachten Sie seltene Tiere oder entspannen Sie am Ufer des Chiemsees. Ob Vogelbeobachtung, Mountainbiking oder Angeln – unsere Natur ist ein Paradies für Outdoor-Enthusiasten und Naturliebhaber.</p>
-            <img src="{{ url_for('static', filename='pictures/nature.jpg') }}" alt="Natur" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
-        </section>
+        <h2>Natur</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="{{ url_for('static', filename='pictures/nature.jpg') }}" alt="Natur 1">
+                <p>Chiemsee Ufer</p>
+            </div>
+            <div class="grid-item">
+                <img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Natur 2">
+                <p>Alpenwanderwege</p>
+            </div>
+            <div class="grid-item">
+                <img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="Natur 3">
+                <p>Waldgebiete</p>
+            </div>
+            <div class="grid-item">
+                <img src="{{ url_for('static', filename='pictures/keramik.jpeg') }}" alt="Natur 4">
+                <p>Vogelbeobachtung</p>
+            </div>
+            <div class="grid-item">
+                <img src="{{ url_for('static', filename='pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg') }}" alt="Natur 5">
+                <p>Mountainbiking</p>
+            </div>
+            <div class="grid-item">
+                <img src="{{ url_for('static', filename='pictures/1046-Schloss_HohenaschauTourist_Info_Aschau_i_Chiemgau_small_mSOQhmX.png') }}" alt="Natur 6">
+                <p>Angeln Spots</p>
+            </div>
+            <div class="grid-item">
+                <img src="{{ url_for('static', filename='pictures/{b2df0732-bf0b-838a-04ac-18fe928d147b}.jpg') }}" alt="Natur 7">
+                <p>Naturpark Trails</p>
+            </div>
+            <div class="grid-item">
+                <img src="{{ url_for('static', filename='pictures/bergsteigerdorf-sachrang.jpeg') }}" alt="Natur 8">
+                <p>Seen und Teiche</p>
+            </div>
+            <div class="grid-item">
+                <img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="Natur 9">
+                <p>Umweltbildung</p>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -56,5 +90,23 @@
     </footer>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        // Search functionality for natur grid
+        const searchInput = document.querySelector('.search-bar input');
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                const query = this.value.toLowerCase();
+                const items = document.querySelectorAll('.grid-item');
+                items.forEach(item => {
+                    const name = item.querySelector('p').textContent.toLowerCase();
+                    if (name.includes(query)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        }
+    </script>
 </body>
 </html>
