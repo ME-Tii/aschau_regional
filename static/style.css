@@ -335,6 +335,9 @@ section p {
         font-size: 2rem;
         z-index: 2;
     }
+    .navbar {
+        padding-right: 0;
+    }
     .navbar-content {
         z-index: 1;
         justify-content: flex-end;
