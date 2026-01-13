@@ -298,6 +298,7 @@ section p {
 
 .search-bar {
     margin-left: auto;
+    padding-right: 40px;
 }
 
 .search-bar input {
