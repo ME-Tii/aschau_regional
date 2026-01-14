@@ -8,6 +8,9 @@ function toggleSidebar() {
         if (toggleBtn) toggleBtn.classList.toggle('rotated');
         if (window.innerWidth > 768) {
             if (mainContent) {
+                // Clear any inline margin styles first
+                mainContent.style.marginLeft = '';
+                mainContent.style.marginRight = '';
                 if (sidebar.classList.contains('collapsed')) {
                     mainContent.classList.remove('sidebar-open');
                     mainContent.classList.add('sidebar-closed');
