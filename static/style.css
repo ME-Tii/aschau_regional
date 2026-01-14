@@ -190,10 +190,15 @@ body {
 
 .main-content.sidebar-open {
     margin: 0 0 0 250px !important;
+    position: static;
+    left: auto;
+    transform: none !important;
 }
 
 .main-content.sidebar-closed {
-    margin: 0 auto !important;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) !important;
 }
 
 section {
@@ -327,10 +332,15 @@ section p {
 
 .vereine-main.sidebar-open {
     margin: 0 0 0 250px !important;
+    position: static;
+    left: auto;
+    transform: none !important;
 }
 
 .vereine-main.sidebar-closed {
-    margin: 0 auto !important;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) !important;
 }
 
 .vereine-main.sidebar-closed {
