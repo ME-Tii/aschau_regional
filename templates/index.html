@@ -12,8 +12,8 @@
 
         <nav class="navbar">
         <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
-        <div class="navbar-content">
-            <img src="{{ url_for('static', filename='pictures/logo_aschau_regional.jpeg') }}" alt="Aschau Regional Logo" style="height: 200px;">
+        <div class="navbar-content" style="max-width: 200px !important; pointer-events: none; padding-bottom: 190px;">
+            <img src="{{ url_for('static', filename='pictures/logo_aschau_regional.jpeg') }}" alt="Aschau Regional Logo" style="width: 300px; height: auto; position: absolute; top: 10px; right: 0;">
         </div>
 
     </nav>
@@ -37,42 +37,54 @@
             </ul>
         </aside>
         <main class="main-content">
-             <section id="landwirtschaft">
-                  <h2>Landwirtschaft</h2>
-                  <p>Entdecken Sie die reiche Tradition der Landwirtschaft in der Aschau-Region. Hier finden Sie Informationen über lokale Betriebe, Produkte und nachhaltige Praktiken. Von frischer Milch und Käse bis hin zu Bio-Obst und -Gemüse – unsere Bauern bieten eine Vielzahl an hochwertigen, regionalen Produkten. Erfahren Sie mehr über die nachhaltige Bewirtschaftung unserer Felder und Wiesen, die die Umwelt schont und die Qualität unserer Lebensmittel sichert.</p>
-                   <img src="{{ url_for('static', filename='pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg') }}" alt="Cow" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
-                   <a href="/landwirtschaft"><button class="section-btn"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button></a>
-              </section>
-             <section id="keramik">
-                  <h2>Keramik</h2>
-                  <p>Die Keramik-Kunst der Aschau-Region ist weltbekannt. Erfahren Sie mehr über die Handwerkskunst, Ateliers und Ausstellungen. Unsere Töpfer und Künstler schaffen einzigartige Stücke, von traditionellen Vasen bis zu modernen Skulpturen. Besuchen Sie lokale Werkstätten, wo Sie den Prozess von der Erde bis zum fertigen Werk verfolgen können, und nehmen Sie an Workshops teil, um selbst kreativ zu werden.</p>
-                   <img src="{{ url_for('static', filename='pictures/keramik.jpeg') }}" alt="Keramik" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
-                   <a href="/keramik"><button class="section-btn"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button></a>
-              </section>
-             <section id="tourismus">
-                  <h2>Tourismus</h2>
-                  <p>Entdecken Sie die schönsten Sehenswürdigkeiten und Aktivitäten in der Aschau-Region. Von Wandern bis Kultur – hier ist für jeden etwas dabei. Erkunden Sie die malerischen Wanderwege in den Chiemgauer Alpen, besuchen Sie historische Schlösser oder genießen Sie entspannte Bootstouren auf dem Chiemsee. Im Sommer locken Festivals und Märkte, im Winter bieten sich Skifahren und Langlaufen an. Unsere Region bietet unvergessliche Erlebnisse für Familien, Paare und Abenteurer.</p>
-                   <img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="Tourismus" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
-                   <a href="/tourismus"><button class="section-btn"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button></a>
-              </section>
-             <section id="natur">
-                  <h2>Natur</h2>
-                  <p>Die unberührte Natur der Aschau-Region lädt zu Entdeckungen ein. Informationen über Nationalparks, Seen und Outdoor-Aktivitäten. Der Chiemgauer Alpenpark bietet atemberaubende Landschaften mit Bergen, Tälern und klaren Seen. Wandern Sie durch dichte Wälder, beobachten Sie seltene Tiere oder entspannen Sie am Ufer des Chiemsees. Ob Vogelbeobachtung, Mountainbiking oder Angeln – unsere Natur ist ein Paradies für Outdoor-Enthusiasten und Naturliebhaber.</p>
-                   <img src="{{ url_for('static', filename='pictures/nature.jpg') }}" alt="Natur" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
-                   <a href="/natur"><button class="section-btn"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button></a>
+              <section id="landwirtschaft">
+                   <div class="section-content">
+                       <h2>Landwirtschaft</h2>
+                       <p>Entdecken Sie die reiche Tradition der Landwirtschaft in der Aschau-Region. Hier finden Sie Informationen über lokale Betriebe, Produkte und nachhaltige Praktiken. Von frischer Milch und Käse bis hin zu Bio-Obst und -Gemüse – unsere Bauern bieten eine Vielzahl an hochwertigen, regionalen Produkten. Erfahren Sie mehr über die nachhaltige Bewirtschaftung unserer Felder und Wiesen, die die Umwelt schont und die Qualität unserer Lebensmittel sichert.</p>
+                   </div>
+                    <img src="{{ url_for('static', filename='pictures/oesterreich-kuehe-touristen-kuhunfaelle.jpg') }}" alt="Cow" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
+                    <a href="/landwirtschaft"><button class="section-btn"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button></a>
                </section>
-             <section id="vereine">
-                   <h2>Vereine</h2>
-                   <p>Erfahren Sie mehr über die lokalen Vereine und Organisationen in der Aschau-Region. Von Sportvereinen über kulturelle Gruppen bis hin zu gemeinnützigen Initiativen – unsere Vereine bilden das Herzstück des Gemeinschaftslebens. Engagieren Sie sich, treffen Sie Gleichgesinnte und unterstützen Sie lokale Projekte, die unsere Region stärken und bereichern.</p>
-                    <img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="Vereine" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
-                    <a href="/vereine"><button class="section-btn"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button></a>
+              <section id="keramik">
+                   <div class="section-content">
+                       <h2>Keramik</h2>
+                       <p>Die Keramik-Kunst der Aschau-Region ist weltbekannt. Erfahren Sie mehr über die Handwerkskunst, Ateliers und Ausstellungen. Unsere Töpfer und Künstler schaffen einzigartige Stücke, von traditionellen Vasen bis zu modernen Skulpturen. Besuchen Sie lokale Werkstätten, wo Sie den Prozess von der Erde bis zum fertigen Werk verfolgen können, und nehmen Sie an Workshops teil, um selbst kreativ zu werden.</p>
+                   </div>
+                    <img src="{{ url_for('static', filename='pictures/keramik.jpeg') }}" alt="Keramik" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
+                    <a href="/keramik"><button class="section-btn"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button></a>
                </section>
-             <section id="news">
-                   <h2>News</h2>
-                   <p>Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten und Ereignissen aus der Aschau-Region. Hier finden Sie Updates zu lokalen Veranstaltungen, Entwicklungen, Neuigkeiten aus Wirtschaft und Kultur sowie wichtige Ankündigungen. Entdecken Sie, was in unserer lebendigen Gemeinde passiert und wie Sie teilhaben können.</p>
-                    <img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="News" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
-                    <a href="/news"><button class="section-btn"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button></a>
+              <section id="tourismus">
+                   <div class="section-content">
+                       <h2>Tourismus</h2>
+                       <p>Entdecken Sie die schönsten Sehenswürdigkeiten und Aktivitäten in der Aschau-Region. Von Wandern bis Kultur – hier ist für jeden etwas dabei. Erkunden Sie die malerischen Wanderwege in den Chiemgauer Alpen, besuchen Sie historische Schlösser oder genießen Sie entspannte Bootstouren auf dem Chiemsee. Im Sommer locken Festivals und Märkte, im Winter bieten sich Skifahren und Langlaufen an. Unsere Region bietet unvergessliche Erlebnisse für Familien, Paare und Abenteurer.</p>
+                   </div>
+                    <img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="Tourismus" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
+                    <a href="/tourismus"><button class="section-btn"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button></a>
                </section>
+              <section id="natur">
+                   <div class="section-content">
+                       <h2>Natur</h2>
+                       <p>Die unberührte Natur der Aschau-Region lädt zu Entdeckungen ein. Informationen über Nationalparks, Seen und Outdoor-Aktivitäten. Der Chiemgauer Alpenpark bietet atemberaubende Landschaften mit Bergen, Tälern und klaren Seen. Wandern Sie durch dichte Wälder, beobachten Sie seltene Tiere oder entspannen Sie am Ufer des Chiemsees. Ob Vogelbeobachtung, Mountainbiking oder Angeln – unsere Natur ist ein Paradies für Outdoor-Enthusiasten und Naturliebhaber.</p>
+                   </div>
+                    <img src="{{ url_for('static', filename='pictures/nature.jpg') }}" alt="Natur" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
+                    <a href="/natur"><button class="section-btn"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button></a>
+                </section>
+              <section id="vereine">
+                    <div class="section-content">
+                        <h2>Vereine</h2>
+                        <p>Erfahren Sie mehr über die lokalen Vereine und Organisationen in der Aschau-Region. Von Sportvereinen über kulturelle Gruppen bis hin zu gemeinnützigen Initiativen – unsere Vereine bilden das Herzstück des Gemeinschaftslebens. Engagieren Sie sich, treffen Sie Gleichgesinnte und unterstützen Sie lokale Projekte, die unsere Region stärken und bereichern.</p>
+                    </div>
+                     <img src="{{ url_for('static', filename='pictures/tour.jpeg') }}" alt="Vereine" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
+                     <a href="/vereine"><button class="section-btn"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button></a>
+                </section>
+              <section id="news">
+                    <div class="section-content">
+                        <h2>News</h2>
+                        <p>Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten und Ereignissen aus der Aschau-Region. Hier finden Sie Updates zu lokalen Veranstaltungen, Entwicklungen, Neuigkeiten aus Wirtschaft und Kultur sowie wichtige Ankündigungen. Entdecken Sie, was in unserer lebendigen Gemeinde passiert und wie Sie teilhaben können.</p>
+                    </div>
+                     <img src="{{ url_for('static', filename='pictures/aschau-ichiemgau.jpeg') }}" alt="News" style="width: 200px; max-width: 100%; height: auto; display: block; margin: 1rem auto;">
+                     <a href="/news"><button class="section-btn"><img src="{{ url_for('static', filename='pictures/right-arrow.png') }}" alt="Next"></button></a>
+                </section>
         </main>
     </div>
     <footer class="footer">
@@ -80,18 +92,18 @@
             <div class="footer-column">
                 <h3>Impressum</h3>
                 <p><strong>Angaben gemäß § 5 TMG:</strong></p>
-                <p>Aschau im Chiemgau Tourismus e.V.<br>
-                Kampenwandstraße 16<br>
-                83229 Aschau im Chiemgau</p>
+                <p>[Organization Name]<br>
+                [Street Address]<br>
+                [City, Postal Code]</p>
                 <p><strong>Vertreten durch:</strong><br>
                 Vorsitzender: [Name des Vorsitzenden]</p>
                 <p><strong>Kontakt:</strong><br>
                 Telefon: [Telefonnummer]<br>
-                E-Mail: info@aschau.de</p>
+                E-Mail: [Email Address]</p>
             </div>
             <div class="footer-column">
                 <p><strong>Registereintrag:</strong><br>
-                Eingetragen im Vereinsregister.<br>
+                [Registration Details]<br>
                 Registergericht: [Registergericht]<br>
                 Registernummer: [Registernummer]</p>
                 <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>

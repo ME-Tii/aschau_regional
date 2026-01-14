@@ -196,31 +196,37 @@ body {
 }
 
 .main-content.sidebar-closed {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%) !important;
+    flex: none;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 section {
-    margin: 0 10px;
+    margin: 0 10px 2rem 10px;
     padding: 0;
     background: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
+    min-height: 250px;
+}
+
+.section-content {
+    flex: 1;
+    padding-right: 30px;
 }
 
 section h2 {
     color: black;
-    margin-bottom: 1rem;
+    margin-bottom: 30px;
     font-weight: 600;
-    padding-right: 50px;
+    padding-right: 30px;
 }
 
 section p {
     color: #6c757d;
     line-height: 1.7;
-    padding-right: 30px;
+    padding-right: 0;
 }
 
 .section-btn {
@@ -338,9 +344,9 @@ section p {
 }
 
 .vereine-main.sidebar-closed {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%) !important;
+    flex: none;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .vereine-main.sidebar-closed {
@@ -356,6 +362,9 @@ section p {
 .grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .grid-item {
@@ -528,7 +537,8 @@ section p {
         justify-content: flex-end;
     }
     .navbar-content img {
-        height: 80px;
+        width: 200px !important;
+        height: auto !important;
     }
     .main-content {
         max-width: none;
