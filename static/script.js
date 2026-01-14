@@ -7,10 +7,12 @@ function toggleSidebar() {
         sidebar.classList.toggle('collapsed');
         if (toggleBtn) toggleBtn.classList.toggle('rotated');
         if (window.innerWidth > 768) {
-            if (sidebar.classList.contains('collapsed')) {
-                if (mainContent) mainContent.style.marginLeft = '0';
-            } else {
-                if (mainContent) mainContent.style.marginLeft = '250px';
+            if (mainContent) {
+                if (sidebar.classList.contains('collapsed')) {
+                    mainContent.classList.remove('sidebar-open');
+                } else {
+                    mainContent.classList.add('sidebar-open');
+                }
             }
         } else {
             sidebar.style.height = 'auto';

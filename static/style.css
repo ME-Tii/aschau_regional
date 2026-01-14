@@ -187,7 +187,11 @@ body {
     padding: 0 1rem 2rem 1rem;
     max-width: none;
     margin: 0 auto;
-    margin-left: 0;
+}
+
+.main-content.sidebar-open {
+    margin-left: 250px;
+    margin-right: auto;
 }
 
 section {
@@ -318,6 +322,11 @@ section p {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.vereine-main.sidebar-open {
+    margin-left: 250px;
+    margin-right: auto;
 }
 
 .grid {
