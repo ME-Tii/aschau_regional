@@ -539,7 +539,7 @@ section p {
     }
 
     .search-bar {
-        display: none;
+        display: none !important;
     }
 
 }
