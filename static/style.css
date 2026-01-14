@@ -186,17 +186,14 @@ body {
     flex: 1;
     padding: 0 1rem 2rem 1rem;
     max-width: none;
-    margin: 0 auto;
 }
 
 .main-content.sidebar-open {
-    margin-left: 250px !important;
-    margin-right: auto !important;
+    margin: 0 0 0 250px !important;
 }
 
 .main-content.sidebar-closed {
-    margin-left: 0 !important;
-    margin-right: auto !important;
+    margin: 0 auto !important;
 }
 
 section {
@@ -326,7 +323,14 @@ section p {
 .vereine-main {
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto;
+}
+
+.vereine-main.sidebar-open {
+    margin: 0 0 0 250px !important;
+}
+
+.vereine-main.sidebar-closed {
+    margin: 0 auto !important;
 }
 
 .vereine-main.sidebar-closed {
