@@ -72,8 +72,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Collapse sidebar by default on all pages
 const sidebarEl = document.getElementById('sidebar');
+const mainContentEl = document.querySelector('.main-content') || document.querySelector('.vereine-main');
 if (sidebarEl) {
     sidebarEl.classList.add('collapsed');
+}
+if (mainContentEl && window.innerWidth > 768) {
+    mainContentEl.classList.add('sidebar-closed');
 }
 
 // Close sidebar when clicking outside
