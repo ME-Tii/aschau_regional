@@ -95,6 +95,9 @@ body {
 .navbar-content {
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    position: relative;
 }
 
 .navbar h1 {
@@ -230,6 +233,10 @@ section p {
     height: 50px;
 }
 
+.mobile-search {
+    display: none !important;
+}
+
 .footer {
     background: grey;
     padding: 2rem;
@@ -286,8 +293,25 @@ section p {
 }
 
 .navbar-vereine .navbar-content img {
-    height: 100px;
-    margin-top: 10px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar-vereine .search-bar {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    display: block;
+    margin-right: 30px;
+}
+
+.navbar-vereine .search-bar input {
+    width: 250px !important;
+    padding: 8px 8px 8px 8px;
 }
 
 .vereine-main {
@@ -341,12 +365,28 @@ section p {
     display: none;
 }
 
+.navbar .search-bar {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    display: block;
+}
+
+.navbar .search-bar input {
+    width: 400px;
+}
+
 .search-bar input {
     padding: 8px 40px 8px 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 200px;
+    background-color: white;
 }
+
+
 
 
 
@@ -481,9 +521,6 @@ section p {
         height: 150px;
         object-fit: contain;
     }
-    .search-bar {
-        display: none;
-    }
     .mobile-search {
         display: block !important;
         width: 100%;
@@ -498,5 +535,11 @@ section p {
         border-radius: 4px;
         width: 80%;
         max-width: 300px;
+        background-color: white;
     }
+
+    .search-bar {
+        display: none;
+    }
+
 }

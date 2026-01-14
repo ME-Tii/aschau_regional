@@ -8,14 +8,17 @@
 </head>
 <body>
 
+
+
     <nav class="navbar navbar-vereine">
         <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
         <div class="navbar-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Suche...">
+            </div>
             <img src="{{ url_for('static', filename='pictures/logo_aschau_regional.jpeg') }}" alt="Aschau Regional Logo" onclick="window.location.href='/'" style="cursor: pointer;">
         </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Suche...">
-        </div>
+
     </nav>
     <div class="mobile-search">
         <input type="text" placeholder="Suche...">
@@ -103,25 +106,29 @@
     </footer>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-    <script>
-        // Search functionality for tourismus grid
-        const searchInputs = document.querySelectorAll('.search-bar input, .mobile-search input');
-        searchInputs.forEach(searchInput => {
-            if (searchInput) {
-                searchInput.addEventListener('input', function() {
-                    const query = this.value.toLowerCase();
-                    const items = document.querySelectorAll('.grid-item');
-                    items.forEach(item => {
-                        const name = item.querySelector('p').textContent.toLowerCase();
-                        if (name.includes(query)) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
-            }
-        });
-    </script>
+     <script>
+         // Search functionality for tourismus grid
+         const searchInputs = document.querySelectorAll('.search-bar input, .mobile-search input');
+         searchInputs.forEach(searchInput => {
+             if (searchInput) {
+                 searchInput.addEventListener('input', function() {
+                     // Sync the value across all search inputs
+                     searchInputs.forEach(input => {
+                         if (input !== this) input.value = this.value;
+                     });
+                     const query = this.value.toLowerCase();
+                     const items = document.querySelectorAll('.grid-item');
+                     items.forEach(item => {
+                         const name = item.querySelector('p').textContent.toLowerCase();
+                         if (name.includes(query)) {
+                             item.style.display = 'block';
+                         } else {
+                             item.style.display = 'none';
+                         }
+                     });
+                 });
+             }
+         });
+     </script>
 </body>
 </html>

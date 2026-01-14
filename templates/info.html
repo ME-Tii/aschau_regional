@@ -11,12 +11,16 @@
     <nav class="navbar navbar-vereine">
         <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
         <div class="navbar-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Suche...">
+            </div>
             <img src="{{ url_for('static', filename='pictures/logo_aschau_regional.jpeg') }}" alt="Aschau Regional Logo" onclick="window.location.href='/'" style="cursor: pointer;">
         </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Suche...">
-        </div>
+
     </nav>
+    <div class="mobile-search">
+        <input type="text" placeholder="Suche...">
+    </div>
     <aside id="sidebar" class="sidebar">
         <ul class="sidebar-menu">
             <li><a href="/landwirtschaft">Landwirtschaft</a></li>
