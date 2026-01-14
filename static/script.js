@@ -10,8 +10,10 @@ function toggleSidebar() {
             if (mainContent) {
                 if (sidebar.classList.contains('collapsed')) {
                     mainContent.classList.remove('sidebar-open');
+                    mainContent.classList.add('sidebar-closed');
                 } else {
                     mainContent.classList.add('sidebar-open');
+                    mainContent.classList.remove('sidebar-closed');
                 }
             }
         } else {

@@ -190,8 +190,13 @@ body {
 }
 
 .main-content.sidebar-open {
-    margin-left: 250px;
-    margin-right: auto;
+    margin-left: 250px !important;
+    margin-right: auto !important;
+}
+
+.main-content.sidebar-closed {
+    margin-left: 0 !important;
+    margin-right: auto !important;
 }
 
 section {
@@ -324,9 +329,14 @@ section p {
     margin: 0 auto;
 }
 
+.vereine-main.sidebar-closed {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
 .vereine-main.sidebar-open {
-    margin-left: 250px;
-    margin-right: auto;
+    margin-left: 250px !important;
+    margin-right: auto !important;
 }
 
 .grid {
