@@ -310,11 +310,13 @@ section p {
 }
 
 .navbar-vereine .navbar-content img {
-    height: 80px;
+    width: 200px;
+    height: auto;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 10px;
 }
 
 .navbar-vereine .search-bar {
@@ -363,14 +365,12 @@ section p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .grid-item {
     text-align: center;
     border: 1px solid #ddd;
-    flex: 1 1 200px;
+    width: 200px;
     height: 250px;
     margin: 10px;
     box-sizing: border-box;
@@ -536,9 +536,8 @@ section p {
         z-index: 1;
         justify-content: flex-end;
     }
-    .navbar-content img {
-        width: 200px !important;
-        height: auto !important;
+    .navbar-vereine .navbar-content img {
+        padding-top: 10px;
     }
     .main-content {
         max-width: none;
