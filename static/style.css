@@ -537,7 +537,12 @@ section p {
         justify-content: flex-end;
     }
     .navbar-vereine .navbar-content img {
-        padding-top: 10px;
+        padding-top: 0;
+    }
+
+    .navbar .navbar-content img {
+        width: 150px !important;
+        right: 10px !important;
     }
     .main-content {
         max-width: none;
